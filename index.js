@@ -8,7 +8,6 @@ const client = new Client({
 })
 const token = (process.argv.find(argument => argument.startsWith('TOKEN=')) || '').replace('TOKEN=', '')
 client.login(token);
-// MTA3NTUzOTk0NDc4NjkwMzEyMQ.G6XwQe.uq4kq8V-Qofv7l7L8tw7qDY4B597OutNya3mUU
 
 const player = createAudioPlayer({ behaviors: { noSubscriber: NoSubscriberBehavior.Play }})
 let queue = []
